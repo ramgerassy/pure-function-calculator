@@ -1,0 +1,82 @@
+* {
+   margin: 0;
+   border: 0;
+   padding: 0;
+}
+body {
+   position: absolute;
+}
+main {
+   background-color: rgb(218, 220, 220);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: min(400px, 80vw);
+   height: max(350px, 35vh);
+   border-radius: 25px;
+   top: 40vh;
+   left: 40vw;
+   position: relative;
+}
+
+h1 {
+   text-align: center;
+   font-family: "Courier New", Courier, monospace;
+   margin: 15px;
+}
+
+section {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.input-container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+input {
+   margin: 5px 15px;
+   font-size: larger;
+}
+@media (max-width: 300px) {
+   div {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+   }
+}
+.pure-calculator-buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+button.pure {
+   background-color: rgb(120, 191, 12);
+   width: max(40px, 5vw);
+   height: max(25px, 5vh);
+   margin: max(10px, 2vh) 0;
+   border-radius: 5px;
+   text-align: center;
+}
+
+button.pure:hover {
+   background-color: rgb(156, 237, 34);
+   transform: scale(1.2);
+}
+
+button.pure:focus {
+   border: 1px solid rgb(156, 255, 8);
+}
+
+.results {
+   text-align: center;
+   padding: 10px;
+   border: 3px dashed rgb(70, 70, 70);
+   width: 30%;
+   align-self: center;
+   margin: 15px 0;
+}

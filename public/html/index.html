@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./../css/style.css" />
+      <title>Pure Calculator</title>
+   </head>
+   <body>
+      <header></header>
+      <main>
+         <section>
+            <h1>Calculator</h1>
+            <div class="input-container">
+               <input
+                  type="number"
+                  placeholder="Enter First Number"
+                  id="first-number"
+               />
+               <input
+                  type="number"
+                  placeholder="Enter Second Number"
+                  id="second-number"
+               />
+            </div>
+            <div class="pure-calculator-buttons">
+               <button class="pure plus">
+                  <svg
+                     class="w-6 h-6 text-gray-800 dark:text-white"
+                     aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                  >
+                     <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 12h14m-7 7V5"
+                     />
+                  </svg>
+               </button>
+               <button class="pure minus">
+                  <svg
+                     class="w-6 h-6 text-gray-800 dark:text-white"
+                     aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                  >
+                     <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 12h14"
+                     />
+                  </svg>
+               </button>
+               <button class="pure multiply">
+                  <svg
+                     style="transform: rotate(45deg)"
+                     class="w-6 h-6 text-gray-800 dark:text-white"
+                     aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                  >
+                     <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 12h14m-7 7V5"
+                     />
+                  </svg>
+               </button>
+               <button class="pure divide">
+                  <svg
+                     style="transform: rotate(110deg)"
+                     class="w-6 h-6 text-gray-800 dark:text-white"
+                     aria-hidden="true"
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="24"
+                     height="24"
+                     fill="none"
+                     viewBox="0 0 24 24"
+                  >
+                     <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 12h14"
+                     />
+                  </svg>
+               </button>
+            </div>
+            <h2 class="results">
+               result:<span id="calculation-result"></span>
+            </h2>
+         </section>
+      </main>
+      <footer></footer>
+      <script src="./../js/build/index.js" />
+   </body>
+</html>
